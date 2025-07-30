@@ -3,82 +3,72 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Ravi Prakash</title>
+  <title>Your Name - Academic Profile</title>
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      max-width: 800px;
-      margin: 0 auto;
-      padding: 2rem;
-      background-color: #f9f9f9;
+    * {
+      box-sizing: border-box;
+    }
+    body, html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #fdfdfd;
       color: #333;
     }
-    h1, h2 {
-      color: #2c3e50;
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      padding: 1rem;
+      max-width: 900px;
+      margin: 0 auto;
     }
+
+    header {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      margin-top: 2rem;
+      gap: 2rem;
+      flex-wrap: wrap;
+    }
+
+    header img {
+      width: 180px;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 3px solid #ccc;
+    }
+
+    header div {
+      flex: 1;
+    }
+
+    h1 {
+      margin-bottom: 0.2rem;
+    }
+
     nav a {
       margin-right: 1rem;
       text-decoration: none;
-      color: #2980b9;
+      color: #2c3e50;
+      font-weight: bold;
     }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
     section {
       margin-top: 2rem;
     }
-  </style>
-</head>
-<body>
-  <header style="display: flex; align-items: center; gap: 1.5rem;">
-  <img src="/profile_photos_webp/profile photo 1.webp" alt="profile" style="width: 250px; border-radius: 50%;" />
-  <div>
-    <h1>Ravi Prakash</h1>
-    <p><strong>MS by Research student</strong> | Department of CSE , IITB</p>
-    <nav>
-      <a href="#research">Research</a>
-      <a href="#publications">Publications</a>
-      <a href="#cv">CV</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </div>
-</header>
 
-
-  <section id="bio">
-    <p>
-      I am a 2nd year MS by Research student at the CSE department, at IIT Bombay. I am a part of <a href="https://trustlab.iitb.ac.in/">Trust Lab</a>. My research interests include theoretical cryptography, specifically multivariate quadratics and polynomial commitments.
-      My advisors are <a href="https://sruthisekar.wordpress.com/">Sruthi Sekar</a> and <a href="https://www.cse.iitb.ac.in/~ckamath/">Chethan Kamath</a>.
-    </p>
-  </section>
-
-  <section id="research">
-    <h2>Research</h2>
-    <p>
-      My current work focuses on multivariate quadratics and polynomial commitment schemes.
-    </p>
-  </section>
-
-  <section id="publications">
-    <h2>Selected Publications</h2>
-    <ul>
-      <li>Author1, Author2, <strong>Your Name</strong>. "Title of Paper." <em>Journal Name</em>, Year.</li>
-      <li>Another Paper Citation...</li>
-    </ul>
-  </section>
-
-  <section id="cv">
-    <h2>CV</h2>
-    <p>
-      Download my <a href="your-cv.pdf" target="_blank">Curriculum Vitae (PDF)</a>.
-    </p>
-  </section>
-
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>Email: ravibprakash[at]cse[dot]iitb[dot]ac[dot]in
-    <p>Office: Room 303, Computing Complex, IIT Bombay</p>
-  </section>
-
-  <footer>
-    <p style="margin-top: 2rem;">&copy; 2025 Ravi Prakash</p>
-  </footer>
-</body>
-</html>
+    footer {
+      margin-top: auto;
+      text-align: center;
+      padding: 1rem 0;
+      font-size: 0.9rem;
+      color: #666;
