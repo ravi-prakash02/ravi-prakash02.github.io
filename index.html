@@ -14,13 +14,18 @@
       padding: 2rem;
       /* background: #f0f0f0;
       color: #333; */
-
-      background-image: url("media/abstract-grayscale-layered-wavy-shapes.jpg");
-      background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
     }
-
+    body::before {
+        content: "";
+        position: fixed;
+        inset: 0;
+        background-image: url("media/abstract-grayscale-layered-wavy-shapes.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        opacity: 0.3; 
+        z-index: -1;
+    }
     .profile {
       text-align: center;
       margin-bottom: 2rem;
